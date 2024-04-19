@@ -1,0 +1,27 @@
+/* Contact */
+
+p {
+    margin-bottom: 3em;
+    line-height: 1.8;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 80%;
+    margin-bottom: 2em;
+
+}
+
+.contact img {
+    width: 3em;
+    transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

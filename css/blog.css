@@ -1,0 +1,113 @@
+/* Blog */
+
+header .buttons, .blog-title .buttons {
+    display: flex;
+    gap: 1em;
+    justify-self: end;
+    align-items: center;
+}
+
+main {
+    justify-content: flex-start;
+}
+
+.blog-title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.select-month {
+    background-color: var(--bg-color);
+    color: var(--highlight-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    width: max-content;
+    min-width: 6em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 3px solid var(--highlight-color);
+    box-sizing: border-box;
+    transition: box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+.select-month:focus {
+    outline: none;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.blog-title .button {
+    display: none;
+    height: fit-content;
+    width: max-content;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin: 0 3em 2em;
+    border-bottom: 3px solid var(--highlight-color);
+}
+
+.date-and-time {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 2em;
+    color: var(--highlight-color)
+}
+
+.date-and-time img {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--fg-color);
+}
+
+h4 {
+    margin: 2em 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    header .addpost {
+        display: none;
+    }
+
+    .blog-title {
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .blog-title .addpost {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-title {
+        width: calc(100% - 4em);
+    }
+
+    .blog-title .button {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (max-width: 515px) {
+    .blog-title {
+        width: 100%;
+    }
+}

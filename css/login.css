@@ -1,0 +1,34 @@
+/* Login page */
+
+.error {
+    color: var(--highlight-color);
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-bg-color);
+    height: 20em;
+    width: 30em;
+}
+
+aside .button {
+    border: 3px solid var(--highlight-color);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    height: fit-content;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+    aside {
+        background-color: var(--bg-color);
+        width: 100%;
+    }
+}

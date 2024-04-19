@@ -1,0 +1,67 @@
+/* Forms */
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    margin: 3em;
+    width: 30em;
+    background-color: var(--lighter-bg-color);
+    border-radius: 20px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
+}
+
+form .text-box {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 2em;
+    width: 90%;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+}
+
+form .text-box:focus {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
+}
+
+form textarea {
+    min-height: 5em;
+    max-height: 20em;
+    height: 5em;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+form .buttons {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 1em;
+}
+
+form .button {
+    flex: 1 1 auto;
+    width: 100%;
+    border-radius: 0.15em;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        box-shadow: none;
+    }
+
+    form .text-box, form .buttons {
+        max-width: 450px;
+        min-width: 300px;
+    }
+}
