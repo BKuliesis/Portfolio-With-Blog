@@ -246,7 +246,7 @@
                             My personal portfolio website with an integrated blog, crafted to showcase my projects and share industry insights. Developed using HTML, CSS, JavaScript for the front end, and PHP with MySQL for backend functionality. Features include a responsive design, real-time content management, and a platform for professional and personal expression.
                         </h4>
                         <div class="button-inside-textbox">
-                            <a href="https://github.com/BKuliesis/portfolio" class="button" target="_blank">VIEW ON GITHUB</a>
+                            <a href="https://github.com/BKuliesis/Portfolio-With-Blog" class="button" target="_blank">VIEW ON GITHUB</a>
                         </div>
                     </div>
                     <div class="project lighter-container">
