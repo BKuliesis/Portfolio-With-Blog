@@ -48,7 +48,7 @@
             <figure>
                 <img src="images/profile-picture-with-filter.png" alt="Benas Kuliesis" title="Benas Kuliesis">
             </figure>
-            <a href="portfolio.html" class="button portfolio-button after">PORTFOLIO</a>
+            <a href="portfolio.php" class="button portfolio-button after">PORTFOLIO</a>
         </div>
     </main>
     <footer>

@@ -14,7 +14,7 @@
         if ($conn->query($sql) === TRUE) {
             header("Location: viewBlog.php");
         } else {
-            displayError("Error: " . $sql . "<br>" . $conn->error);
+            echo "Error: " . $sql . "<br>" . $conn->error;
         }
 
         $conn->close();  
